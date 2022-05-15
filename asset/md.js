@@ -17,6 +17,7 @@ let app = Vue.createApp({
                 .then((res) => {
                     var html = converter.makeHtml(res.data);           
                     this.markdown = html;
+                    console.log(html)
                 })
         }
     },
