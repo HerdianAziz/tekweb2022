@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
 </head>
-<body>
+<body id="app">
     <div class="global">
         <div class="header">
             <img class="logo" src="../images/lofo.png" alt="logo">
@@ -26,10 +29,10 @@
         <div class="paralax">
             <div class="content">
                 <div class="grid" id="2">
-                    <div class="poster">
-                        <img src="../images/cheryl.png">
+                    <div class="poster" v-for="artikell in articles">
+                        <img :src="artikell.Thumbnail">
                             <div class="des">
-                                <p>Cheryl</p>
+                                <p>{{artikell.Title}}</p>
                                 <small>Cheryl adalah seorang gadis cantik</small>
                                 <br>
                                 <small>dan berumur 20 tahun yang tinggal di...</small>
@@ -39,7 +42,7 @@
             
                             </div>
                     </div>
-                    <div class="poster">
+                    <!-- <div class="poster">
                         <img src="../images/maria.png">
                             <div class="des">
                                 <p>Maria</p>
@@ -64,9 +67,11 @@
                                
             
                             </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
+<script src="../asset/main.js"></script>
 </body>
+
 </html>
