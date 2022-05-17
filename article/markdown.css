@@ -2,3 +2,22 @@
     width: 60%;
     margin-left: 20%;
 }
+.iklan{
+    width: 50px;
+    position: absolute;
+}
+.iklan2{
+    position: relative;
+    transform: translateX(400px);
+}
+.iklan3{
+    position: absolute;
+    transform: translateY(60px);
+}
+.iklan4{
+    position: absolute;
+    transform: translate(1090px,-200px);
+}
+body{
+    overflow-x: hidden;
+}
