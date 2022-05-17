@@ -16,7 +16,7 @@
 }
 .iklan4{
     position: absolute;
-    transform: translate(1090px,-200px);
+    transform: translate(1090px,1000px);
 }
 body{
     overflow-x: hidden;
