@@ -149,6 +149,8 @@ button:hover{
 
 .des small{
     font-weight: lighter;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .judul h1{
