@@ -7,8 +7,16 @@ ___
 Penulis :
 
 Efrar Khalid Hanas, S.Psi
+
+<br>
+
 ![narkoba](../images/artikel%202.png)
+
+<br>
+
 Di tengah gencarnya perhatian bangsa ini akan wabah virus Corona (Covid-19) yang makin hari semakin masif, ada satu hal yang tak boleh terlupakan, yakni bahaya penyalahgunaan narkoba yang terus merusak anak bangsa negeri ini. Kita tahu saat ini wabah Covid-19 menyita seluruh perhatian kita. Tapi jangan lupa ancaman narkoba yang lebih berbahaya dimasa depan juga belum berakhir. Dalam sebulan terakhir ini saja Badan Narkotika Nasional bersama Bea dan Cukai menggagalkan peredaran gelap narkoba jenis shabu jaringan Aceh-Medan dengan barang bukti sebanyak 32 Kg di Asahan, Sumatera Utara. Ditambah lagi ditengah pandemik corona ini ada sederet artis tanah air yang lagi-lagi terciduk kasus narkoba. Hal ini sungguh sangat memprihatinkan. Karena pada situasi pandemi covid-19 yang masih melanda negeri ini, telah banyak hal yang membuat aktivitas kita terhenti, namun di sisi lain masalah peredaran gelap dan penyalahgunaan narkoba tidak pernah berhenti di Negara kita. Meski demikian, dalam konteks upaya penanggulangan narkoba, masyarakat perlu dan harus terus diingatkan bahwa ancaman narkoba sudah sejak awal sebelum serangan virus corona ini muncul.
+
+<be>
 
 Dalam situasi sekarang ini upaya sosialisasi bahaya narkoba yang biasanya menghadirkan massa besar tentunya tidak dapat lagi dilakukan untuk sementara waktu. Namun demikian, BNNP Aceh melalui Bidang Pencegahan dan Pemberdayaan Masyarakat tentunya harus jeli untuk mengambil langkah pencegahan yang tetap aman dan memberikan dampak yang signifikan kepada masyarakat. Dari sekian banyak opsi yang ada, Program BNN menyapa dengan mobil keliling adalah salah satu program yang telah dijalankan oleh BNNP Aceh untuk sosialisasi. Program ini dianggap aman untuk dilaksanakan, mengingat petugas tidak perlu berinteraksi langsung dengan masyarakat. Melalui program BNN Menyapa ini petugas mengkompanyekan bahaya narkoba di lokasi-lokasi yang strategis di kawasan kota dan pedesaan. Di samping itu, BNNP Aceh juga menghimbau kepada masyarakat untuk melakukan pencegahan penyebaran virus corona dengan cara melakukan pola hidup bersih, sehat, menjaga jarak, selalu mencuci tangan baik setelah keluar rumah maupun aktivitas di dalam rumah, tidak keluar rumah jika tidak dalam keperluan yang mendesak, dan rajin berolahraga. Khusus bagi para pelajar yang diberikan libur agar memanfaatkan waktu belajar di rumah dengan mengerjakan tugas yang telah diberikan oleh guru. Selain itu BNNP Aceh juga membantu membagikan masker secara gratis kepada masyarakat. Di antaranya membagikan masker kepada pedagang pasar, kepada civitas akademik baik itu Universitas Negeri maupun Universitas Swasta, yang semua itu dilakukan sebagai upaya mencegah penyalahgunaan narkoba dan penularan Virus Corona di tengah masyarakat. Walau dalam kondisi krisis seperti saat ini kita tetap harus bekerja keras dan dituntut kreatif dan inovatif dalam melaksanakan upaya pencegahan dengan tetap memperhatikan protokol kesehatan yang berlaku.
 

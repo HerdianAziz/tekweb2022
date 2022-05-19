@@ -7,10 +7,18 @@ ___
 Penulis :
 
 Fathurrohman ( Analis Kejahatan Narkotika )
+
+<br>
+
 ![narkoba](../images/artikel%201.png)
+
+<br>
+
 Rashi K. Shukla (2016) dalam bukunya Methamphetamine: A Love Story mengurai dengan brilian empat tahun melakukan penelitian di sebuah pemukiman pedesaan Oklahoma. Penelitian kriminologis selama ini berfokus pada komunitas perkotaan dan berdiri pada asumsi bahwa kota-kota kecil relatif aman dan bebas dari kejahatan.
 
 Namun, Shukla menjelaskan situasi kemiskinan di pedesaan sarat dengan penyalahgunaan obat terlarang. Narkoba telah menjadi pusat kehidupan beberapa warga di pedesaan. Shukla menguraikan dengan jeli 33 responden dalam penelitiannya yang berlangsung selama 4 tahun. Dia melakukan wawancara mendalam dan bahkan turut mengadvokasi untuk memberikan jalan terang dari lorong gelap para penyalahguna dan pengedar narkoba.
+
+<br>
 
 Di bukunya, Shukla bermaksud menggambarkan pengalaman hidup orang-orang yang tinggal di pedesaan permukiman Oklahoma dan untuk meningkatkan pemahaman tentang risiko kesehatan masyarakat yang diciptakannya bagi pengguna dan masyarakat umum. Shukla kemudian mendirikan “rumah pendidikan narkoba” untuk memberikan gambaran utuh tentang persoalan narkoba dan menawarkan sarananya tersebut sebagai tata cara efektif untuk memerangi masalah ini.
 
