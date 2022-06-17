@@ -7,6 +7,9 @@
     scroll-behavior:smooth;
 
 }
+:root{
+    --lebarhp:400px;
+}
 body{
     overflow-x: hidden;
 }
@@ -16,6 +19,7 @@ li, a, button{
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
+
 }
 
 .header{
@@ -77,7 +81,7 @@ button:hover{
 }
 
 .paralax{
-    background-image: url(images/paralax2.jpg);
+    background-image: url(http://iangalery.my.id/images/paralax2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -183,7 +187,7 @@ button:hover{
 }
 
 .slider{
-    background-image: url(images/paralax2.jpg);
+    background-image: url(http://iangalery.my.id/images/paralax2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -289,11 +293,10 @@ button:hover{
 
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) and (max-height: 812px) {
     body{
         overflow-x:hidden;
-        width:100%;
-        max-width:1080px;
+        width: var(--lebarhp);
     }
 
 
@@ -306,8 +309,7 @@ button:hover{
     }
     
     .header{
-        width: 100%;
-        max-width: 1080px;
+        width: var(--lebarhp);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -316,7 +318,7 @@ button:hover{
     }
     
     .header a{
-        width: auto;
+        width: 300px;
         height: auto;
         background-color: #0088a9;
     }
@@ -332,6 +334,7 @@ button:hover{
         width: auto;
         height: auto;
         background-color: #0088a9;
+        overflow: hidden;
     }
     
     .nav li{
@@ -342,11 +345,12 @@ button:hover{
         background-color: #0088a9;
         animation: geser 2s ease-out;
         transform: translateX(0px);
+
     }
     
     @keyframes geser {
         from{
-            transform: translateX(1000px);
+            transform: translateX(700px);
         }
         to{
             transform: translateX(0px);
@@ -379,14 +383,13 @@ button:hover{
     }
     
     .paralax{
-        background-image: url(images/paralax2.jpg);
+        background-image: url(http://iangalery.my.id/images/paralax22.jpg);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 778px;
-        width: 100%;
-        max-width: 1080px;
+        width: var(--lebarhp);
         background-color: none;
         overflow-x: hidden;
     }
@@ -394,7 +397,7 @@ button:hover{
     
     
     .content{
-        width: 100%; 
+        width: var(--lebarhp); 
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -428,26 +431,22 @@ button:hover{
 
     .project{
         height: 778px;
-        width: 100%;
+        width: var(--lebarhp);
         background-color: #0088a9;
         overflow-x: hidden;
         
     }
     
     .project .kanan{
+        background-image: url(http://iangalery.my.id/images/1.jpg);
         height: 778px;
-        width: 189px;
+        width: 200px;
         background-color: #00576d;
-        margin-left: 49%;
         position: absolute;
-        overflow: hidden;
-    }
-    
-    .kanan img{
-        height: 778px;
-        width: 460px;
+        transform: translateX(-50px);
         opacity: 0.5;
     }
+
     
     .ian{
         width: 270px;
@@ -476,11 +475,12 @@ button:hover{
 
     
     .nama{
-        width: 70%;
-        max-width: 800px; 
+        width: 260px;
+        max-width: var(--lebarhp); 
         position: absolute;
         top: 116%;
-        transform: translateX(0%);
+        transform: translateX(0px);
+        margin-left: 10px;
         color: #fff;
         z-index: 7;
         overflow-x: hidden;
@@ -488,7 +488,7 @@ button:hover{
     }
     
     .nama h1{
-        font-size: 30px;
+        font-size: 7vw;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
         padding: 0px 28px 0px 0px;
@@ -499,13 +499,13 @@ button:hover{
     }
     
     .slider{
-        background-image: url(images/paralax2.jpg);
+        background-image: url(http://iangalery.my.id/images/paralax2.jpg);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 778px;
-        width: 100%;
+        width: var(--lebarhp);
         background-color: none;
         overflow-x: hidden;
     }
@@ -523,6 +523,7 @@ button:hover{
         width: 5200px;
         transition: 0.5s;
         justify-content:baseline;
+        overflow: hidden;
     }
     
     .slide-col{
