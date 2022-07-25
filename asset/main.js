@@ -5,6 +5,7 @@ let app = Vue.createApp({
         articles: {},
         biodata: {},
         home: {},
+        project: {},
         markdown: null
       }
     },
@@ -33,12 +34,20 @@ let app = Vue.createApp({
             .then((res) => {
               this.home = res.data;
             })
+        },
+        getProject() {
+          axios
+            .get(apiUrl+"project")
+            .then((res) => {
+              this.project = res.data;
+            })
       }
     },
     beforeMount() {
       this.getArticleData(),
       this.getBiodata(),
-      this.getHome()
+      this.getHome(),
+      this.getProject()
     }
   })
   app.mount('#app');
