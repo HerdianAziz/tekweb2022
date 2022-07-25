@@ -1,4 +1,4 @@
-let apiUUrl = "http://api.iangalery.my.id/index.php/"
+let apiUrl = "http://api.iangalery.my.id/index.php/"
 let app = Vue.createApp({
     data() {
       return {
