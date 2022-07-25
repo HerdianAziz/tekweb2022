@@ -9,9 +9,12 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
-<body>
-<div class="global">
+<body id="app">
+
+<div class="global" >
     <div class="header">
         <img class="logo" src="images/lofo.png" alt="logo">
         <nav>
@@ -50,8 +53,8 @@
         </div>
     </div>
 
-    <div class="nama">
-        <h1>{{ nama }}</h1>
+    <div class="nama" >
+        <h1>{{ biodata.name }}</h1>
         <span>Introduce I am a student and freelancer who is struggling in the field of design.<br>
             I am 20 years old and I am currently studying Information Systems<br>
             at Ahmad Dahlan University, Yogyakarta.</span>
@@ -118,10 +121,9 @@
         </div>
     </div>
 </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="js.js"></script>
-    </script>
+<script src="/js.js"></script>
+<script src="./asset/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script>
         ScrollReveal({
             reset: true,
@@ -139,7 +141,39 @@
         ScrollReveal().reveal('.ian3', { delay: 200, origin: 'left' });
         
     </script>
-
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+        
+            btn[0].onclick = function(){
+                slide.style.transform = "translateX(0px)";
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("aktif");
+                } 
+                this.classList.add("aktif");
+            }
+            btn[1].onclick = function(){
+                slide.style.transform = "translateX(-1100px)";
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("aktif");
+                } 
+                this.classList.add("aktif");
+            }
+            btn[2].onclick = function(){
+                slide.style.transform = "translateX(-2200px)";
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("aktif");
+                } 
+                this.classList.add("aktif");
+            }
+            btn[3].onclick = function(){
+                slide.style.transform = "translateX(-3300px)";
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("aktif");
+                } 
+                this.classList.add("aktif");
+            }
+    </script>
     
 </body>
 </html>
