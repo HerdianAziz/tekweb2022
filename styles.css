@@ -1,0 +1,939 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@505&family=Philosopher&family=Playfair+Display:wght@400;500&family=Poppins:wght@800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+
+}
+:root{
+    --lebarhp:400px;
+}
+body{
+    overflow-x: hidden;
+}
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #0088a9;
+}
+
+.header a{
+    width: auto;
+    height: auto;
+    background-color: #0088a9;
+}
+
+.logo{
+    cursor: pointer;
+    background-color: #0088a9;
+}
+
+.nav{
+    list-style: none;
+    width: auto;
+    height: auto;
+    background-color: #0088a9;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 0px 20px;
+    width: auto;
+    height: auto;
+    background-color: #0088a9;
+}
+
+.nav li a{
+    transition: all 0.3 s ease 0s;
+    width: auto;
+    height: auto;
+    background-color: #0088a9;
+}
+
+.nav li a:hover{
+    color: #00576d;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(0, 155, 194, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 s ease 0s;
+}
+
+button:hover{
+    background-color: rgb(0, 155, 194, 0.8);
+}
+
+.paralax{
+    background-image: url(http://iangalery.my.id/images/paralax2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    height: 864px;
+    width: 100%;
+    background-color: none;
+}
+
+
+
+.content{
+    width: 100%; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.logo3{
+    width: 350px;
+    position: absolute;
+    transform: translateY(-70%);
+    align-items: center;
+    z-index: 1;
+
+}
+
+.logo2{
+    width: 800px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100px;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Philosopher', sans-serif;
+}
+.project{
+    height: 964px;
+    width: 100%;
+    background-color: #0088a9;
+}
+
+.project .kanan{
+    height: 964px;
+    width: 750Spx;
+    background-color: #00576d;
+    margin-left: 60%;
+    position: absolute;
+    overflow: hidden;
+
+
+}
+
+
+.ian{
+    width: 800px;
+    position: absolute;
+    align-items: center;
+    transform: translate(100%, 12%);
+    z-index: 5;
+}
+
+
+.ian2{
+    width: 743px;
+    position: absolute;
+    align-items: center;
+    transform: translate(114%, 12%);
+    z-index: 4;
+}
+
+.ian3{
+    width: 727px;
+    position: absolute;
+    align-items: center;
+    transform: translate(110%, 6%);
+    z-index: 3;
+}
+
+.ian4{
+    width: 100%;
+    opacity: 0.5;
+
+}
+
+.nama{
+    width: 100%; 
+    position: absolute;
+    top: 150%;
+    transform: translateX(10%);
+    color: #fff;
+    z-index: 7;
+}
+
+.nama h1{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+.slider{
+    background-image: url(http://iangalery.my.id/images/paralax2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    height: 964px;
+    width: 100%;
+    background-color: none;
+}
+
+.slider h2{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.slide-row{
+    display: flex;
+    width: 5200px;
+    transition: 0.5s;
+}
+
+.slide-col{
+    width: 1100px;
+    height: 450px;
+    position: relative;
+}
+
+.user-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img{
+    height: 100%;
+    border-radius: 10px;
+}
+
+.user-text{
+    background: #2d3a59;
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: #ded4d6;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.user-text p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.user-text h3{
+    margin:  35px 0 5px;
+    color: #fff;
+}
+
+.container2{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-80%, 40%);
+}
+
+.indikator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(100%);
+    bottom: -30%;
+}
+
+.btn{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.aktif{
+    width: 45px;
+}
+
+.vectorh{
+    width: 1100px;
+    height: 120%;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 400px) {
+    body{
+        overflow-x:hidden;
+        width: var(--lebarhp);
+    }
+
+
+    li, a, button{
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        color: #edf0f1;
+    }
+    
+    .header{
+        width: var(--lebarhp);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        background-color: #0088a9;
+    }
+    
+    .header a{
+        width: 300px;
+        height: auto;
+        background-color: #0088a9;
+    }
+    
+    .logo{
+        width: 100px;
+        cursor: pointer;
+        background-color: #0088a9;
+    }
+    
+    .nav{
+        list-style: none;
+        width: auto;
+        height: auto;
+        background-color: #0088a9;
+        overflow: hidden;
+    }
+    
+    .nav li{
+        display: grid;
+        padding: 0px 20px;
+        width: auto;
+        height: auto;
+        background-color: #0088a9;
+        animation: geser 2s ease-out;
+        transform: translateX(0px);
+
+    }
+    
+    @keyframes geser {
+        from{
+            transform: translateX(700px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    
+    .nav li a{
+        font-size: 0.7em;
+        transition: all 0.3 s ease 0s;
+        width: auto;
+        height: auto;
+        background-color: #0088a9;
+    }
+    
+    .nav li a:hover{
+        color: #00576d;
+    }
+    
+    button{
+        padding: 9px 25px;
+        background-color: rgb(0, 155, 194, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3 s ease 0s;
+    }
+    
+    button:hover{
+        background-color: rgb(0, 155, 194, 0.8);
+    }
+    
+    .paralax{
+        background-image: url(http://iangalery.my.id/images/paralax22.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        height: 778px;
+        width: var(--lebarhp);
+        background-color: none;
+        overflow-x: hidden;
+    }
+    
+    
+    
+    .content{
+        width: var(--lebarhp); 
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+    
+    .logo3{
+        width: 160px;
+        position: absolute;
+        transform: translateY(-70%);
+        align-items: center;
+        z-index: 1;
+    
+    }
+    
+    .logo2{
+        width: 300px;
+    }
+    
+    .content p{
+        padding: 0px 28px 0px 28px;
+        font-weight: 100px;
+        font-size: 10px;
+        line-height: 10px;
+        font-family: 'Philosopher', sans-serif;
+    }
+
+
+
+
+    .project{
+        height: 778px;
+        width: var(--lebarhp);
+        background-color: #0088a9;
+        overflow-x: hidden;
+        
+    }
+    
+    .project .kanan{
+        background-image: url(http://iangalery.my.id/images/1.jpg);
+        height: 778px;
+        width: 200px;
+        background-color: #00576d;
+        position: absolute;
+        transform: translateX(-50px);
+        opacity: 0.5;
+    }
+
+    
+    .ian{
+        width: 270px;
+        position: absolute;
+        transform: translate(50px, 300px);
+        z-index: 5;
+    }
+    
+    
+    .ian2{
+        width: 243px;
+        position: absolute;
+        transform: translate(50px, 300px);
+        z-index: 4;
+    }
+    
+    .ian3{
+        width: 227px;
+        position: absolute;
+        transform: translate(50px, 300px);
+        z-index: 3;
+    }
+    
+
+
+
+    
+    .nama{
+        width: 260px;
+        max-width: var(--lebarhp); 
+        position: absolute;
+        top: 116%;
+        transform: translateX(0px);
+        margin-left: 10px;
+        color: #fff;
+        z-index: 7;
+        overflow-x: hidden;
+        padding: 0px 100px 0 28px;
+    }
+    
+    .nama h1{
+        font-size: 7vw;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        padding: 0px 28px 0px 0px;
+    }
+
+    .nama span{
+        font-size: 10px;
+    }
+    
+    .slider{
+        background-image: url(http://iangalery.my.id/images/paralax2.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        height: 778px;
+        width: var(--lebarhp);
+        background-color: none;
+        overflow-x: hidden;
+    }
+    
+    .slider h2{
+        text-align: center;
+        padding-top: 80px;
+        font-size: 40px;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .slide-row{
+        display: flex;
+        width: 5200px;
+        transition: 0.5s;
+        justify-content:baseline;
+        overflow: hidden;
+    }
+    
+    .slide-col{
+        width: 1100px;
+        height: 450px;
+        position: relative;
+    }
+    
+    .user-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+    
+    .user-img img{
+        height: 50%;
+        border-radius: 10px;
+        transform: translate(-310px, 50px);
+    }
+    
+    .user-text{
+        background: #2d3a59;
+        width: 320px;
+        height: 170px;
+        position: absolute;
+        left: 0;
+        top: 45%;
+        transform: translate(480px, 40%);
+        border-radius: 10px;
+        color: #ded4d6;
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+    
+    .user-text p{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .user-text h3{
+        margin:  35px 0 5px;
+        color: #fff;
+    }
+    
+    .container2{
+        width: 800px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-80%, -10%);
+    }
+    
+    .indikator{
+        position: absolute;
+        left: 55%;
+        transform: translateX(100%);
+        bottom: -30%;
+    }
+    
+    .btn{
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin: 4px;
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .aktif{
+        width: 45px;
+    }
+    
+    .vectorh{
+        width: 100%;
+        max-width:1080px;
+        height: 120%;
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    body{
+        overflow-x:hidden;
+        width: var(--lebarhp);
+    }
+
+
+    li, a, button{
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        color: #edf0f1;
+    }
+    
+    .header{
+        width: var(--lebarhp);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        background-color: #0088a9;
+    }
+    
+    .header a{
+        width: 300px;
+        height: auto;
+        background-color: #0088a9;
+    }
+    
+    .logo{
+        width: 100px;
+        cursor: pointer;
+        background-color: #0088a9;
+    }
+    
+    .nav{
+        list-style: none;
+        width: auto;
+        height: auto;
+        background-color: #0088a9;
+        overflow: hidden;
+    }
+    
+    .nav li{
+        display: grid;
+        padding: 0px 20px;
+        width: auto;
+        height: auto;
+        background-color: #0088a9;
+        animation: geser 2s ease-out;
+        transform: translateX(0px);
+
+    }
+    
+    @keyframes geser {
+        from{
+            transform: translateX(700px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    
+    .nav li a{
+        font-size: 0.7em;
+        transition: all 0.3 s ease 0s;
+        width: auto;
+        height: auto;
+        background-color: #0088a9;
+    }
+    
+    .nav li a:hover{
+        color: #00576d;
+    }
+    
+    button{
+        padding: 9px 25px;
+        background-color: rgb(0, 155, 194, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3 s ease 0s;
+    }
+    
+    button:hover{
+        background-color: rgb(0, 155, 194, 0.8);
+    }
+    
+    .paralax{
+        background-image: url(http://iangalery.my.id/images/paralax22.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        height: 778px;
+        width: var(--lebarhp);
+        background-color: none;
+        overflow-x: hidden;
+    }
+    
+    
+    
+    .content{
+        width: var(--lebarhp); 
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+    
+    .logo3{
+        width: 160px;
+        position: absolute;
+        transform: translateY(-70%);
+        align-items: center;
+        z-index: 1;
+    
+    }
+    
+    .logo2{
+        width: 300px;
+    }
+    
+    .content p{
+        padding: 0px 28px 0px 28px;
+        font-weight: 100px;
+        font-size: 10px;
+        line-height: 10px;
+        font-family: 'Philosopher', sans-serif;
+    }
+
+
+
+
+    .project{
+        height: 778px;
+        width: var(--lebarhp);
+        background-color: #0088a9;
+        overflow-x: hidden;
+        
+    }
+    
+    .project .kanan{
+        background-image: url(http://iangalery.my.id/images/1.jpg);
+        height: 778px;
+        width: 200px;
+        background-color: #00576d;
+        position: absolute;
+        transform: translateX(-50px);
+        opacity: 0.5;
+    }
+
+    
+    .ian{
+        width: 270px;
+        position: absolute;
+        transform: translate(50px, 300px);
+        z-index: 5;
+    }
+    
+    
+    .ian2{
+        width: 243px;
+        position: absolute;
+        transform: translate(50px, 300px);
+        z-index: 4;
+    }
+    
+    .ian3{
+        width: 227px;
+        position: absolute;
+        transform: translate(50px, 300px);
+        z-index: 3;
+    }
+    
+
+
+
+    
+    .nama{
+        width: 260px;
+        max-width: var(--lebarhp); 
+        position: absolute;
+        top: 116%;
+        transform: translateX(0px);
+        margin-left: 10px;
+        color: #fff;
+        z-index: 7;
+        overflow-x: hidden;
+        padding: 0px 100px 0 28px;
+    }
+    
+    .nama h1{
+        font-size: 7vw;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        padding: 0px 28px 0px 0px;
+    }
+
+    .nama span{
+        font-size: 10px;
+    }
+    
+    .slider{
+        background-image: url(http://iangalery.my.id/images/paralax2.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        height: 778px;
+        width: var(--lebarhp);
+        background-color: none;
+        overflow-x: hidden;
+    }
+    
+    .slider h2{
+        text-align: center;
+        padding-top: 80px;
+        font-size: 40px;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .slide-row{
+        display: flex;
+        width: 5200px;
+        transition: 0.5s;
+        justify-content:baseline;
+        overflow: hidden;
+    }
+    
+    .slide-col{
+        width: 1100px;
+        height: 450px;
+        position: relative;
+    }
+    
+    .user-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+    
+    .user-img img{
+        height: 50%;
+        border-radius: 10px;
+        transform: translate(-310px, 50px);
+    }
+    
+    .user-text{
+        background: #2d3a59;
+        width: 320px;
+        height: 170px;
+        position: absolute;
+        left: 0;
+        top: 45%;
+        transform: translate(480px, 40%);
+        border-radius: 10px;
+        color: #ded4d6;
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+    
+    .user-text p{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .user-text h3{
+        margin:  35px 0 5px;
+        color: #fff;
+    }
+    
+    .container2{
+        width: 800px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-80%, -10%);
+    }
+    
+    .indikator{
+        position: absolute;
+        left: 55%;
+        transform: translateX(100%);
+        bottom: -30%;
+    }
+    
+    .btn{
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin: 4px;
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .aktif{
+        width: 45px;
+    }
+    
+    .vectorh{
+        width: 100%;
+        max-width:1080px;
+        height: 120%;
+        overflow: hidden;
+    }
+    
+    
+    
+    }
+
+
+
