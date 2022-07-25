@@ -30,10 +30,10 @@
             <div class="content">
                 <div class="grid" id="2">
                     <div class="poster" v-for="artikell in articles">
-                        <img :src="artikell.Thumbnail">
+                        <img :src="artikell.thumbnail">
                             <div class="des">
-                                <p>{{artikell.Title}}</p>
-                                <small>{{artikell.Content}}</small>
+                                <p>{{artikell.title}}</p>
+                                <small>{{artikell.content}}</small>
                                 <br>
                                 <a :href="'markdown.html?markdown='+artikell.markdown">Selengkapnya</a>
                                
