@@ -83,6 +83,7 @@ button:hover{
     height: 864px;
     width: 100%;
     background-color: none;
+    z-index: -999;
 }
 
 .grid{
