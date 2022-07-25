@@ -9,7 +9,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
-    
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body id="app">
@@ -32,21 +31,21 @@
         <div class="content">
             <img src="images/h1.png" class="logo3">
             <img src="images/lofo2.png" class="logo2" id="fotoo">
-            <p class="p">on the IAN.GALLERY website you will find portfolios, articles and projects that I have made myself.</p>
+            <p class="p">{{ home.des }}</p>
         </div>
     </div>
 
     <div class="project" id="biodata">
         <div class="vector">
-            <img src="images/ian.png" class="ian">
+            <img :src="biodata.gambar_1" class="ian">
         </div>
 
         <div class="vector2">
-            <img src="images/ian2.png" class="ian2">
+            <img :src="biodata.gambar_2" class="ian2">
         </div>
 
         <div class="vector3">
-            <img src="images/ian3.png" class="ian3">
+            <img :src="biodata.gambar_3" class="ian3">
         </div>
         <div class="kanan">
 
@@ -69,12 +68,12 @@
                 <span class="btn"></span>
                 <span class="btn"></span>
             </div>
-                <div class="vectorh">
-                    <div class="slide-row" id="slide">
-                        <div class="slide-col">
+                <div class="vectorh" >
+                    <div class="slide-row" id="slide" >
+                        <div class="slide-col" v-for="project in project" >
                             <div class="user-text">
-                                <p>{{ amarades }}</p>
-                                <h3>{{ judul }}</h3>
+                                <p>{{ project.desc }}</p>
+                                <h3>{{ project.judul }}</h3>
                                 <p>IAN.GALLERY</p>
                             </div>
                             <div class="user-img">
@@ -82,7 +81,7 @@
                             </div>
                         </div>
 
-                        <div class="slide-col">
+                        <!--<div class="slide-col">
                             <div class="user-text">
                                 <p>{{ cheryldes }}</p>
                                 <h3>{{ judul2 }}</h3>
@@ -114,7 +113,7 @@
                             </div>
                             <div class="user-img">
                                 <img src="images/amara.png">
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
