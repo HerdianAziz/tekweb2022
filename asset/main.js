@@ -9,7 +9,7 @@ let app = Vue.createApp({
     methods: {
       getArticleData() {
         axios
-          .get(apiUrl+"article/1")
+          .get(apiUrl+"article")
           .then((res) => {
             this.articles = res.data;
             console.log(res.data)
