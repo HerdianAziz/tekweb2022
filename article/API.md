@@ -1,289 +1,303 @@
-## API POINTS
-Adapun api point yang saya bangun untuk portfolio saya di antaranya user dan article
-
-## User
-
-berikut adalah design controller user yang dimana berperan ketika kita hendak mengambil data dari api server
-di antaranya:
-`getAllUser()`, `getUserById`, `createUser()`, `updateUser()`, `deleteUser()`.
-
-> getAllUser()
-
-getAllUser adalah fungsi untuk mendapatkan data seluruh user dari server database
+# API POINTS
 
 
-GET: /user
+
+## BIODATA
+
+### Menampilkan biodata user
+```
+GET: /biodata
 
 response:
 [
-    {
-        "id"            : "",
-        "avatar_url"    : "",
-        "nama"          : "",
-        "desc"          : "",
-        "birthday"      : "",
-        "website"       : "",
-        "phone"         : "",
-        "city"          : "",
-        "age"           : "",
-        "email"         : ""
-    },
+  {
+    "id"              : "",
+    "nama_lengkap"    : "",
+    "nama_panggilan"  : "",
+    "tgl_lahir"       : "",
+    "deskripsi"       : "",
+    "avatar"          : ""
+  },
+  {
     ...
+  }
 ]
-
-
-> getUserById()
-
-getUserById sendiri merupakan fungsi untuk mendapatkan user berdasarkan `id`
-
-
-GET: /user/[id]
+```
+### Menampilkan biodata user berdasarkan ```id```
+```
+GET: /biodata/[id]
 
 response:
 {
-    "id"            : "",
-    "avatar_url"    : "",
-    "nama"          : "",
-    "desc"          : "",
-    "birthday"      : "",
-    "website"       : "",
-    "phone"         : "",
-    "city"          : "",
-    "age"           : "",
-    "email"         : ""
+  "id"              : "",
+  "nama_lengkap"    : "",
+  "nama_panggilan"  : "",
+  "tgl_lahir"       : "",
+  "deskripsi"       : "",
+  "avatar"          : ""
 }
+```
+### Menambahkan biodata user
+```
+POST: /biodata
 
-
-> createUser()
-
-createUser adalah fungsi untuk membuat data baru yang disimpan ke server di api point server 
-
-
-POST: /user
-
-headers:
+data:
 {
-    Content-type: 'application/json',
-    Authorization: 'Bearer [access_token]'
-}
-
-body:
-{
-    "avatar_url"    : "",
-    "nama"          : "",
-    "desc"          : "",
-    "birthday"      : "",
-    "website"       : "",
-    "phone"         : "",
-    "city"          : "",
-    "age"           : "",
-    "email"         : ""
+  "nama_lengkap"    : "",
+  "nama_panggilan"  : "",
+  "tgl_lahir"       : "",
+  "deskripsi"       : "",
+  "avatar"          : ""
 }
 
 response:
-true    // if success
-false   // if failure
+true    //if true
+false   //if false
+```
+### Mengubah biodata user
+```
+PUT: /biodata
 
-
-> updateUser()
-
-updateUser merupakan fungsi untuk mengubah data pada api server
-
-
-PUT: /user
-
-headers:
+data:
 {
-    Content-type: 'application/json',
-    Authorization: 'Bearer [access_token]'
-}
-
-body:
-{
-    "id"            : "",
-    "avatar_url"    : "",
-    "nama"          : "",
-    "desc"          : "",
-    "birthday"      : "",
-    "website"       : "",
-    "phone"         : "",
-    "city"          : "",
-    "age"           : "",
-    "email"         : ""
+  "nama_lengkap"    : "",
+  "nama_panggilan"  : "",
+  "tgl_lahir"       : "",
+  "deskripsi"       : "",
+  "avatar"          : ""
 }
 
 response:
-true    // if success
-false   // if failure
-
-
-> deleteUser()
-
-deleteUser merupakan fungsi untuk menghapus data user pada server api
-
-
-DELETE: /user/[id]
-
-headers:
-{
-    Content-type: 'application/json',
-    Authorization: 'Bearer [access_token]'
-}
+true    //if true
+false   //if false
+```
+### Menghapus biodata user
+```
+DELETE: /biodata/[id]
 
 response:
-true    // if success
-false   // if failure
-
-
-## Article
-
-Kemudian berikut adalah design controller article yang berfungsi untuk memanggil data article dari server api
-di antarnya:
-`getAllArticle()`, `getArticleById()`, `createArticle()`, `updateArtcile()`, `deleteArticle()`.
-
-> getAllArticle()
-
-getAllArticle adalah fungsi untuk mendapatkan data seluruh article dari api server
-
-
+true    //if true
+false   //if false
+```
+## ARTICLE
+### Menampilkan seluruh article
+```
 GET: /article
 
 response:
 [
-    {
-        "id"                : "",
-        "thumbnail_url"     : "",
-        "title"             : "",
-        "content"           : "",
-        "author"            : "",
-        "article_url"       : "",
-    },
+  {
+    "id"        : "",
+    "title"     : "",
+    "author"    : "",
+    "markdown"  : "",
+    "thumbnail" : "",
+    "content"   : ""
+  },
+  {
     ...
+  }
 ]
-
-
-
-> getArticleById()
-
-getArticleById adalah fungsi untuk medapatkan data article berdasarkan `id`
-
-
+```
+### Menampilkan article berdasarkan ```id```
+```
 GET: /article/[id]
 
 response:
 {
-    "id"                : "",
-    "thumbnail_url"     : "",
-    "title"             : "",
-    "content"           : "",
-    "author"            : "",
-    "article_url"       : "",
-},
-
-> createArticle()
-
-createArticle adalah fungsi untuk manambahkan data article ke server api
-
-
+  "id"        : "",
+  "title"     : "",
+  "author"    : "",
+  "markdown"  : "",
+  "thumbnail" : "",
+  "content"   : ""
+}
+```
+### Menambahkan article
+```
 POST: /article
 
-header:
+data:
 {
-    Content-type: 'application/json',
-    Authorization: 'Bearer [access_token]'
+  "title"     : "",
+  "author"    : "",
+  "markdown"  : "",
+  "thumbnail" : "",
+  "content"   : ""
 }
 
-body:
-{
-    "thumbnail_url"     : "",
-    "title"             : "",
-    "content"           : "",
-    "author"            : "",
-    "article_url"       : "",
-},
-
 response:
-true    // if success
-false   // if failure
-
-> updateArtcile()
-
-updateArticle adalah fungsi untuk mengubah data pada server yang telah ada pada article
-
-
+true    //if true
+false   //if false
+```
+### Mengubah article
+```
 PUT: /article
 
-header:
+data:
 {
-    Content-type: 'application/json',
-    Authorization: 'Bearer [access_token]'
-}
-
-body:
-{
-    "id"                : "",
-    "thumbnail_url"     : "",
-    "title"             : "",
-    "content"           : "",
-    "author"            : "",
-    "article_url"       : "",
-},
-
-response:
-true    // if success
-false   // if failure
-
-> deleteArticle()
-
-deleteArticle adalah fungsi untuk menhapus data article yang telah ada pada server api
-
-
-DELETE: /article/[id]
-
-headers:
-{
-    Content-type: 'application/json',
-    Authorization: 'Bearer [access_token]'
+  "title"     : "",
+  "author"    : "",
+  "markdown"  : "",
+  "thumbnail" : "",
+  "content"   : ""
 }
 
 response:
-true    // if success
-false   // if failure
+true    //if true
+false   //if false
+```
+### Menghapus article
+```
+DELETE: /article
 
+response:
+true    //if true
+false   //if false
+```
 
-## Desain Database
+## PORTFOLIO
+### Menampilkan seluruh data portfolio
+```
+GET: /portfolio
 
-Berikut adalah pola design dari database saya:
+response:
+[
+  {
+    "id"          : "",
+    "title"       : "",
+    "deskripsi"   : "",
+    "url"         : "",
+    "thumbnail"   : ""
+  },
+  {
+    ...
+  }
+]
+```
+### Menampilkan data portfolio berdasarkan ```id```
+```
+GET: /portfolio/[id]
 
-mermaid
-classDiagram
-    class user{
-        # id: int
-        + avatar_url: string
-        + nama: string
-        + desc: string
-        + birthday: string
-        + website: string
-        + phone: string
-        + city: string
-        + age: string
-        + email: string
-        + getAllUser()
-        + getUserById()
-        + createUser()
-        + updateUser()
-        + deleteUser()
-    }
-    class article{
-        # id: int
-        + thumbnail_url: string
-        + title: string
-        + content: string
-        + author: string
-        + article_url: string
-        + getAllArticle()
-        + getArticleById()
-        + createArticle()
-        + updateArticle()
-        + deleteArticle()
-    }
+response:
+{
+  "id"          : "",
+  "title"       : "",
+  "deskripsi"   : "",
+  "url"         : "",
+  "thumbnail"   : ""
+}
+```
+### Menambahkan data porfolio
+```
+POST: /portfolio
+
+data:
+{
+  "title"       : "",
+  "deskripsi"   : "",
+  "url"         : "",
+  "thumbnail"   : "" 
+}
+
+response:
+true    //if true
+false   //if false
+```
+
+### Mengubah data porfolio
+```
+PUT: /portfolio
+
+data:
+{
+  "title"       : "",
+  "deskripsi"   : "",
+  "url"         : "",
+  "thumbnail"   : "" 
+}
+
+response:
+true    //if true
+false   //if false
+```
+### Menghapus data portfolio
+```
+DELETE: /portfolio/[id]
+
+response:
+true    //if true
+false   //if false
+```
+## SOCIAL
+### Menampilkan seluruh data social media
+```
+GET: /social
+
+response:
+[
+  {
+    "id"          : "",
+    "instagram"   : "",
+    "github"      : "",
+    "email"       : ""
+  },
+  {
+    ...
+  }
+]
+```
+### Menampilkan data social media berdasarkan ```id```
+```
+GET: /social/[id]
+
+response:
+{
+  "id"          : "",
+  "instagram"   : "",
+  "github"      : "",
+  "email"       : ""
+}
+```
+### Menambahkan data social media
+```
+POST: /social
+
+data:
+{
+  "instagram"   : "",
+  "github"      : "",
+  "email"       : "" 
+}
+
+response:
+true    //if true
+false   //if false
+```
+
+### Mengubah data social media
+```
+PUT: /social
+
+data:
+{
+  "instagram"   : "",
+  "github"      : "",
+  "email"       : "" 
+}
+
+response:
+true    //if true
+false   //if false
+```
+### Menghapus data social media
+```
+DELETE: /social/[id]
+
+response:
+true    //if true
+false   //if false
+```
+
+# DATABASE DESIGN
+![Design Database](https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/Database%20Design.png)
