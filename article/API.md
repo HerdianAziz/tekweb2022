@@ -299,4 +299,4 @@ false   //if false
 ```
 
 # DATABASE DESIGN
-![Design Database](https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/Database%20Design.png)
+![Design Database](https://raw.githubusercontent.com/HerdianAziz/tekweb2022/main/article/Design%20API.png)
